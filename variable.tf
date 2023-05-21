@@ -11,7 +11,6 @@ variable "managed_policy_arns" {
   type        = list(string)
   description = "arn of managed iam policies (by deafualt allow to create cloudwatch log group)"
   default     = ["arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"]
-
 }
 variable "bucket-name" {
   description = "name of the bucket that will trigger the lambda"
